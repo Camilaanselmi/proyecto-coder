@@ -26,7 +26,6 @@
     padding: 0;
 }
 
-
 /*Index----------------------------------------------------------------------------------------------------------------------------------*/
 /*Banner principal*/
 .banner-index{
@@ -133,10 +132,8 @@ nav ul {
     background-color: #A8A5A0;
 }
 
-/* Estilos para los elementos de la lista */
-
 nav li {
-    margin-right: 20px; /* Espacio entre elementos de la lista */
+    margin-right: 20px; /* Espacio entre elementos*/
 }
 
 nav ul li a {
@@ -158,10 +155,39 @@ nav ul li a:hover {
     text-align: center;
     font-weight: 1500;
     color: black;
-    font-family: 'Merriweather Sans', sans-serif;;
+    font-family: 'Roboto', sans-serif;
     margin-top: 20px;
     margin-bottom: 30px;
     padding: 20px;
+}
+
+nav li{
+    position: relative;
+    display: block;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+li::after{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    top: 100%;
+    left: 0;
+    transition: transform 0.5s;
+    transform: scaleX(0);
+    transform-origin: right;
+    background-color: #588157;
+}
+
+li:hover{
+    color: #A8A5A0;
+}
+
+li:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
 }
 
 /*---Sobre nosotros---*/
@@ -332,6 +358,7 @@ main{
 /*---Catalogo de excursiones en cards---*/
 .h2-size {
     font-size: 1.5rem; 
+    color:#000;
 }
 
 .card-img-custom {
@@ -349,16 +376,25 @@ main{
 
 .card-text{
     font-family: 'Merriweather Sans', sans-serif;;
+    color:#000;
 }
 
 .card-bg {
-    --bs-bg-opacity: 0.7;
-    background-color: rgba(255, 255, 255, var(--bs-bg-opacity)) !important;
+    --bs-bg-opacity: 0.5;
+    background-color: rgba(52, 78, 65, var(--bs-bg-opacity)) !important;
 }
 
 .btn-design{
     font-family:'Manrope', sans-serif;
 }
+
+/*
+#DAD7CD beige.hex
+#A3B18A verde claro.hex
+#588157 verde intermedio.hex
+#3A5A40 verde oscuro.hex
+#344E41 verde mas oscuro.hex
+*/
 
 /*Laguna Esmeralda-------------------------------------------------------------------------------------------------------*/
 .banner-laguna{
@@ -394,26 +430,52 @@ main{
     font-size: 1rem;
     color: #000;
     font-weight: 400;
-    font-family: 'Manrope', sans-serif;
-    text-align: center;
+    font-family: 'Raleway', sans-serif;
+    text-align: justify;
+}
+
+.padding-laguna{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.subtitulo-laguna{
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    text-align: right;
+}
+
+.texto-laguna{
+    justify-content: center;
+    align-items: center;
+}
+
+.bg-color-laguna{
+    background-color: #DAD7CD;
 }
 
 /*---Imagenes Laguna Esmeralda---*/
-  
+.img-fluid {
+    width: 300px;
+    height: 100px;
+    object-fit: cover;
+    padding: 5px 0 1px 0;
+}
 
 /*---Listas---*/
 .lista-excursiones li h3{
     color: black;
     text-decoration: none;
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Raleway', sans-serif;
     text-decoration: underline;
+    font-size: 1.2rem;
 }
 
 .lista-excursiones li p{
     font-size: 1rem;
     color: black;
     font-weight: 400;
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 .lista-excursiones li h3,
@@ -426,7 +488,8 @@ main{
     list-style-type: none;
     color: black;
     text-decoration: none;
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    text-align: right;
 }
 
 .lista-agencias li:before {
@@ -508,8 +571,8 @@ main{
 }
 
 .col-margin {
-    margin-left: 15px; /* Ajusta este valor según tu preferencia */
-    margin-right: 15px; /* Ajusta este valor según tu preferencia */
+    margin-left: 15px; 
+    margin-right: 15px; 
 }
 
 /*---imagenes---*/
@@ -522,8 +585,8 @@ main{
     position: relative;
     top: 0;
     right: 0;
-    width: 70%; /* Ajusta el ancho*/
-    height: auto; /* Para mantener la proporción */
+    width: 70%; 
+    height: auto; 
     margin-left: 15px;
     margin-right: 15px;
 }
