@@ -8,22 +8,51 @@
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <!--CSS-->
-    <link rel="stylesheet" href="../css/style.css">
+    <!--SCSS-->
+    <link rel="stylesheet" href="../css/estilos.css">
+
+    <!-- jQuery 1.8 or later, 33 KB -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- Fotorama from CDNJS, 19 KB -->
+<link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+
 </head>
 
 <body>
-    <!--Cabeza de página-->
+    <!--Menú de navegación-->
     <header>
-        <img src="../multimedia/pngwing.com.png" alt="logotipo" class="class-img">
-        <!--Menú-->
-        <nav>
-            <ul>
-                <li> <a href="../index.html">INICIO</a></li>
-                <li> <a href="./ushuaia.html">USHUAIA</a></li>
-                <li> <a href="./excursiones.html">EXCURSIONES</a></li>
-                <li> <a href="./contacto.html">CONTACTO</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-custom">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../multimedia/pngwing.com.png" alt="Logo" height="50px">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarNav" aria-labelledby="navbarNavLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body justify-content-end">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../index.html">INICIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../page/ushuaia.html">USHUAIA</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../page/excursiones.html">EXCURSIONES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../page/contacto.html">CONTACTO</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -38,86 +67,110 @@
             </div>
         </section>
 
-        <p class="subtitulos-negro">¡Prepárate para conectarte con la naturaleza en su máxima expresión y llevar
+        <p class="subtitulos-verde">¡Prepárate para conectarte con la naturaleza en su máxima expresión y llevar
             contigo recuerdos inolvidables de este majestuoso paraíso patagónico!</p>
                 
-                <div class="col-md-6 texto-laguna">
+        <hr class="linea-horizontal">
+
+                <div class="texto-laguna">
                     <p class="descripción-laguna">
                         El trekking a Laguna Esmeralda en Ushuaia es una experiencia inolvidable
                         para los amantes de la naturaleza y la aventura. Ubicada en el corazón de la Patagonia, esta ruta de
                         senderismo ofrece impresionantes paisajes de montañas, bosques y glaciares. El recorrido, de
                         aproximadamente 4 horas de ida y vuelta, te llevará a través de terrenos variados, desde senderos
-                        bien marcados hasta terrenos más desafiantes. Al llegar a la Laguna Esmeralda, serás recompensado
+                        bien marcados hasta terrenos más desafiantes. <br> Al llegar a la Laguna Esmeralda, serás recompensado
                         con la vista de sus aguas turquesas rodeadas de imponentes montañas.
                     </p>
-                    <!--Agencias de viaje donde contratar la excursión-->
-                    <div>
-                        <h2 class="subtitulo-laguna">Donde contratar la excursión</h2>
-                            <ul class="lista-agencias">
-                                <li><a href="https://www.kaitekviajes.com.ar/" target="_blank">Kaitek Viajes</a> </li>
-                                <li><a href="https://latitudushuaia.tur.ar/" target="_blank">Latitud Ushuaia</a></li>
-                                <li><a href="https://tierraturismo.com/" target="_blank">Tierra turismo</a></li>
-                                <li><a href="https://tolkeyenpatagonia.com/" target="_blank">Tolkeyen Patagonia</a></li>
-                            </ul>
-                    </div>
                 </div>
-            </div>
-        </div>
 
         <!--Información sobre la excursión-->
         <section>
-            <div class="container">
+            <div class="container d-flex">
                 <div class="row">
-                    <div class="col-lg-6 order-md-1">
-                        <h2 class="subtitulos-negro">INFORMACION TECNICA</h2>
-                        <ul class="lista-excursiones">
-                            <li>
-                                <h3>Nivel de dificultad:</h3>
-                                <p>Moderado. La ruta es accesible para personas con experiencia en senderismo y una
-                                    condición
-                                    física adecuada. Hay algunas áreas empinadas y terrenos irregulares.</p>
-                            </li>
-                            <li>
-                                <h3>Distancia:</h3>
-                                <p>Aproximadamente 9 kilómetros (ida y vuelta). El tiempo estimado para completar el
-                                    trekking es
-                                    de unas 4 a 5 horas, dependiendo del ritmo y las condiciones climáticas.</p>
-                            </li>
-                            <li>
-                                <h3>Altitud:</h3>
-                                <p>El punto más alto del recorrido alcanza alrededor de 400 metros sobre el nivel del
-                                    mar.</p>
-                            </li>
-                            <li>
-                                <h3>Terreno:</h3>
-                                <p>La ruta incluye caminos bien definidos, senderos de tierra, piedras y tramos de
-                                    barro,
-                                    especialmente después de lluvias o nevadas.</p>
-                            </li>
-                            <li>
-                                <h3>Época recomendada:</h3>
-                                <p>El trekking es posible durante todo el año, pero la temporada alta es de noviembre a
-                                    marzo,
-                                    cuando las condiciones climáticas son más favorables y las temperaturas son más
-                                    suaves.</p>
-                            </li>
-                            <li>
-                                <h3>Equipamiento recomendado:</h3>
-                                <p>Calzado de trekking impermeable y con buen agarre, ropa adecuada para condiciones
-                                    climáticas
-                                    variables (incluyendo capas para el frío), mochila, agua, snacks, protector solar,
-                                    sombrero
-                                    y bastones de trekking (opcional).</p>
-                            </li>
-                            <li>
-                                <p>El recorrido puede realizarse de manera independiente pero es recomendable hacerla
-                                    con un
-                                    guía si no se cuenta con experiencia en trekking.</p>
-                            </li>
-                        </ul>
+                    <div class="d-flex col-lg-6">
+                        <div class="texto-con-fondo">
+                            <h2 class="sub-excursiones">INFORMACION TECNICA</h2>
+                            <ul class="lista-excursiones justificado">
+                                <li>
+                                    <h3>Nivel de dificultad:</h3>
+                                    <p>Moderado. La ruta es accesible para personas con experiencia en senderismo y una
+                                            condición
+                                            física adecuada. Hay algunas áreas empinadas y terrenos irregulares.</p>
+                                </li>
+                                <li>
+                                    <h3>Distancia:</h3>
+                                    <p>Aproximadamente 9 kilómetros (ida y vuelta). El tiempo estimado para completar el
+                                            trekking es
+                                            de unas 4 a 5 horas, dependiendo del ritmo y las condiciones climáticas.</p>
+                                </li>
+                                <li>
+                                    <h3>Altitud:</h3>
+                                    <p>El punto más alto del recorrido alcanza alrededor de 400 metros sobre el nivel del
+                                            mar.</p>
+                                </li>
+                                <li>
+                                    <h3>Terreno:</h3>
+                                    <p>La ruta incluye caminos bien definidos, senderos de tierra, piedras y tramos de
+                                            barro,
+                                            especialmente después de lluvias o nevadas.</p>
+                                </li>
+                                <li>
+                                    <h3>Época recomendada:</h3>
+                                    <p>El trekking es posible durante todo el año, pero la temporada alta es de noviembre a
+                                            marzo,
+                                            cuando las condiciones climáticas son más favorables y las temperaturas son más
+                                            suaves.</p>
+                                </li>
+                                <li>
+                                    <h3>Equipamiento recomendado:</h3>
+                                    <p>Calzado de trekking impermeable y con buen agarre, ropa adecuada para condiciones
+                                            climáticas
+                                            variables (incluyendo capas para el frío), mochila, agua, snacks, protector solar,
+                                            sombrero
+                                            y bastones de trekking (opcional).</p>
+                                </li>
+                                <li class="sin-item">
+                                    <p class="destacado">El recorrido puede realizarse de manera independiente pero es recomendable hacerla
+                                            con un
+                                            guía si no se cuenta con experiencia en trekking.</p>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <!--Imagenes sobre la excursión-->
+            </div>
+        
+            <!--imagenes fotorama-->
+            <div class="d-flex">
+                <div class="col-lg-6">
+                    <div class="fotorama" data-nav="thumbs" data-fit="cover">
+                        <a href="../multimedia/laguna-esme1.jpg"><img src="../multimedia/laguna-esme1.jpg"></a>
+                        <a href="../multimedia/laguna-esmeralda4.jpg"><img src="../multimedia/laguna-esmeralda4.jpg"></a>
+                        <a href="../multimedia/laguna-esmeralda5.jpg"><img src="../multimedia/laguna-esmeralda5.jpg"></a>
+                        <a href="../multimedia/laguna-esmeralda6.jpg"><img src="../multimedia/laguna-esmeralda6.jpg"></a>
+                        <a href="../multimedia/laguna-esme3.jpg"><img src="../multimedia/laguna-esme3.jpg"></a>
+                        <a href="../multimedia/trekking2.jpg"><img src="../multimedia/trekking2.jpg"></a>
+                        <a href="../multimedia/laguna-esmeralda7.jpg"><img src="../multimedia/laguna-esmeralda7.jpg"></a>
+                        <a href="../multimedia/laguna-esmeralda8.jpg"><img src="../multimedia/laguna-esmeralda8.jpg"></a>
+                        <a href="../multimedia/laguna-esmeralda9.jpg"><img src="../multimedia/laguna-esmeralda9.jpg"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+            <!--Agencias de viaje donde contratar la excursión-->
+            <div>
+                <h2 class="subtitulo-laguna">Donde contratar la excursión</h2>
+                <ul class="lista-agencias">
+                    <li><a href="https://www.kaitekviajes.com.ar/" target="_blank">Kaitek Viajes</a> </li>
+                    <li><a href="https://latitudushuaia.tur.ar/" target="_blank">Latitud Ushuaia</a></li>
+                    <li><a href="https://tierraturismo.com/" target="_blank">Tierra turismo</a></li>
+                    <li><a href="https://tolkeyenpatagonia.com/" target="_blank">Tolkeyen Patagonia</a></li>
+                </ul>
+            </div>
+        
+
+                <!--Imagenes sobre la excursión
                 <div class="col-lg-6 order-md-2">
                     <div class="contenedor-imagenes">
                         <div class="row">
@@ -159,7 +212,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
 
     <!--Pie de página-->

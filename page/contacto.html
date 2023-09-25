@@ -8,22 +8,43 @@
     <!--Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <!--CSS-->
-    <link rel="stylesheet" href="../css/style.css">
+    <!--SCSS-->
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
 
 <body>
-    <!--Cabeza de página-->
+    <!--Menú de navegación-->
     <header>
-        <img src="../multimedia/pngwing.com.png" alt="logotipo" class="class-img">
-        <!--Menú-->
-        <nav>
-            <ul>
-                <li> <a href="../index.html">INICIO</a></li>
-                <li> <a href="./ushuaia.html">USHUAIA</a></li>
-                <li> <a href="./excursiones.html">EXCURSIONES</a></li>
-                <li> <a href="#">CONTACTO</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-light bg-custom">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="../multimedia/pngwing.com.png" alt="Logo" height="50px">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarNav" aria-labelledby="navbarNavLabel">
+                    <div class="offcanvas-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body justify-content-end">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="../index.html">INICIO</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../page/ushuaia.html">USHUAIA</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../page/excursiones.html">EXCURSIONES</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">CONTACTO</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -39,10 +60,11 @@
         </section>
 
         <div>
-            <p class="parrafos-excursiones">
+            <p class="subtitulos-verde">
             Embárcate en una experiencia única en Ushuaia, la Ciudad del Fin del
-            Mundo. Descubre la magia de este destino mágico en la Patagonia. Si deseas más información o tienes
-            alguna consulta sobre tus planes de viaje a Ushuaia, no dudes en contactarnos. Estamos aquí para
+            Mundo. Descubre la magia de este destino mágico en la Patagonia.</p> 
+            <p class="descripción-laguna">Si deseas más información o tienes
+            alguna consulta sobre tus planes de viaje a Ushuaia, no dudes en contactarnos. <br> Estamos aquí para
             ayudarte a hacer de tu viaje una experiencia inolvidable.
             </p>
         </div>
@@ -50,25 +72,25 @@
         <h2 class="subtitulos-negro">DEJANOS TU MENSAJE</h2>
         <div class="container"> 
             <div class="row col-margin">
-                <div class="col-md-6">
+                <div class="col-md-6 recuadro">
                     <form action="">
                         <div class="form-group">
-                            <label class="parrafos" for="nombreApellido">Nombre y Apellido</label>
+                            <label class="texto-form" for="nombreApellido">Nombre y Apellido</label>
                             <input type="text"  class="form-control" name="" id="nombreApellido">
                         </div>
                         <div class="form-group">
-                            <label class="parrafos" for="email">Email</label>
+                            <label class="texto-form" for="email">Email</label>
                             <input type="email" class="form-control" name="" id="email" placeholder="ejemplo@hotmail.com">
                         </div>    
                         <div class="form-group">
-                            <label class="parrafos" for="telefono">Número de telefóno</label>
+                            <label class="texto-form" for="telefono">Número de telefóno</label>
                             <input type="number" class="form-control" name="" id="telefono" placeholder="ejemplo +54911504701">
                         </div>    
-                        <div class="form-group">
-                            <label class="parrafos" for="mensaje">Mensaje</label>
-                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                        <div class="form-group espaciado">
+                            <label class="texto-form label-mensaje" for="mensaje">Mensaje</label>
+                            <textarea name="" id="" cols="68" rows="10" class="cuadro-mensaje"></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary">Enviar</button>
+                        <button type="submit" class="btn btn-outline-dark btn-design btn-sm">Enviar</button>
                     </form>
                 </div>
                 <div class="col-md-6 d-flex justify-content-center align-items-center">
