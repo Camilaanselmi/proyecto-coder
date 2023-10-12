@@ -1,0 +1,42 @@
+/*Ushuaia----------------------------------------------------------------------------------------------------------------*/
+.banner-ushuaia{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(../multimedia/desde-arriba.jpg);
+    background-size: cover;
+    background-position: center;
+    text-shadow: 2px 2px 4px black;
+    overflow: hidden;
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5);
+}
+
+.banner-ushuaia::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.fondo{
+    overflow: hidden;
+}
+
+.p-design{
+    font-size: 1rem;
+    color: black;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    text-align: justify;
+}
+
+.carousel-inner img {
+    object-fit: cover; 
+    height: 750px;
+} 

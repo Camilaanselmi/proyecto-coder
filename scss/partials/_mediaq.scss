@@ -1,0 +1,303 @@
+/*MediaQ*/
+
+/*Mobile*/
+@media only screen and (max-width: 500px){
+    
+    /*NAV*/   
+    .navbar {
+        min-height: auto;
+    }
+
+   /*BANNER*/
+   .banner-content h1 {
+       font-size: 4rem;
+   }
+   
+   .banner-content p {
+       font-size: 1.5rem;
+   }
+   
+   .button-princip {
+       font-size: 0.8rem;
+       padding: 0.5rem 1rem;
+   }
+   
+   /*SOBRE NOSOTROS*/
+   .parrafos{
+       font-size: 1rem;
+       font-weight: 400;
+       margin-top: 30px;
+       text-align: center;
+   }
+   
+   .vertical-line {
+       border-left: none;
+   }
+   
+   .pf-1{
+       text-align: center;
+       padding-left: 30px;
+   }
+   
+   .pf-2{
+       text-align: center;
+       padding-right: 30px;
+   }
+   
+   .photo-grid{
+       flex-direction: column;
+   }
+   
+   .img-cuadricula{
+       width: 100%;
+   }
+   
+   h3{
+       font-size: 1.2rem;
+   }
+   
+   /*USHUAIA*/   
+   .subtitulos-negro{
+       font-weight: 1000px;
+       margin-top: 20px;
+       margin-bottom: 20px;
+   }
+
+   .row {
+    flex-direction: column;
+  }
+
+  .col-md-6:nth-child(2) {
+    order: -1;
+  }
+
+  .col-md-6:nth-child(3) {
+    order: 2;
+  }
+   
+   /*EXCURSIONES*/
+   .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  /*LAGUNA ESMERALDA*/
+
+  .subtitulos-verde {
+    font-size: 1.5rem;
+  }
+
+  .linea-horizontal {
+    width: 50%;
+  }
+
+  .descripción-laguna{
+    font-size: 1.1rem;
+    text-align: justify;
+    margin: 30px 20px 40px 20px;
+  }
+
+  .sub-excursiones {
+    color: $verdeoscuro;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  .texto-con-fondo {
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .destacado {
+    color: $verdeoscuro !important;
+  }
+
+  .list-group-item {
+    text-align: justify;
+  }
+
+  /*CONTACTO*/
+  .recuadro::before {
+    content: "";
+    background-image: url('../multimedia/borcegos.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    position: absolute; 
+    background-color: rgba(0, 0, 0, 0.3);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    filter: brightness(0.5);
+    z-index: -1;
+  }
+
+  .recuadro {
+    position: relative; 
+    z-index: 1; 
+  }
+
+  .form-control,
+  .cuadro-mensaje {
+  background-color: rgb(168, 165, 160, 0.8); 
+  border: 1px solid black; 
+  border-radius: 5px;
+  width: 100%; 
+  margin-top: 5px; 
+  padding: 10px; 
+  color: black; 
+  }
+
+  .texto-form{
+    color: $arena;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+  }
+
+  .img-contacto{
+    display: none;
+  }
+
+  .btn-custom {
+    background-color: $arena; 
+    color: black; 
+    border: 1px solid #000; 
+  }
+
+  .descripción-laguna{
+    text-align: center;
+  }
+
+}
+
+/*Tablet*/
+
+@media (min-width: 501px) and (max-width: 1024px){
+
+    /*BANNER*/
+    .banner-content h1 {
+        font-size: 4.5rem;
+    }
+    
+    .banner-content p {
+        font-size: 2rem;
+    }
+    
+    .button-princip {
+        font-size: 0.8rem;
+        padding: 0.5rem 1rem;
+    }
+
+    /*SOBRE NOSOTROS*/
+    .pf-1{
+      text-align: center;
+      padding-left: 30px;
+    }
+  
+    .pf-2{
+      text-align: center;
+      padding-right: 30px;
+    }
+
+    /*USHUAIA*/  
+    .subtitulos-negro{
+        font-weight: 1000px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .row {
+        flex-direction: column;
+      }
+ 
+    .container {
+        padding: 0; 
+    }
+
+    .col-md-6 {
+        width: 100%; 
+    }
+
+    .order-1 {
+        order: 1; 
+    }
+    
+    .order-2 {
+        order: 2; 
+    }
+    
+    .order-3 {
+        order: 3; 
+    }
+    
+    .order-4 {
+        order: 4; 
+    }
+
+    /*LAGUNA ESMERALDA*/
+    
+      .descripción-laguna{
+        font-size: 1.1rem;
+        text-align: justify;
+        margin: 30px 30px 40px 30px;
+      }
+    
+      .list-group-item {
+        text-align: justify;
+      }
+
+      .fotorama-tablet{
+        padding-top: 30px;
+      }
+ 
+    /*CONTACTO*/
+    .recuadro::before {
+        content: "";
+        background-image: url('../multimedia/borcegos.jpg'); 
+        background-size: cover; 
+        background-position: center; 
+        position: absolute; 
+        background-color: rgba(0, 0, 0, 0.3);
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        filter: brightness(0.5);
+        z-index: -1;
+      }
+    
+      .recuadro {
+        position: relative; 
+        z-index: 1; 
+      }
+    
+    .form-control,
+    .cuadro-mensaje {
+      background-color: rgb(168, 165, 160, 0.8); 
+      border: 1px solid black; 
+      border-radius: 5px;
+      width: 100%; 
+      margin-top: 5px; 
+      padding: 10px; 
+      color: black; 
+    }
+    
+    .texto-form{
+        color: $arena;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
+    }
+    
+      .img-contacto{
+        display: none;
+      }
+    
+      .btn-custom {
+        background-color: $arena; 
+        color: black; 
+        border: 1px solid #000; 
+      }
+
+      .descripción-laguna{
+        text-align: center;
+      }
+}

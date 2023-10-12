@@ -1,0 +1,27 @@
+/*Footer-------------------------------------------------------------------------------------------------------------------*/
+
+footer {
+    background-color: $verdeoscuro;
+    padding: 20px;
+    text-align: center;
+}
+
+.back-color{
+    background-color: $verdeoscuro;
+}
+
+/*---Logo y Copy---*/
+.logo-footer{
+    width: 50px;
+    background-position: center;
+    text-align: center;
+    display: inline-block;
+}
+
+.copy-footer{
+    text-align: center;
+    font-size: 0.8rem;
+    color: black;
+    font-weight: 400;
+    font-family: 'Manrope', sans-serif;
+}

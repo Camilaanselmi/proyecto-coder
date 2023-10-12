@@ -1,0 +1,79 @@
+/*Excursiones---------------------------------------------------------------------------------------------------------------*/
+
+.banner-excursiones{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(../multimedia/banner-excursiones.jpg);
+    background-size: cover;
+    background-position: center;
+    text-shadow: 2px 2px 4px black;
+    overflow: hidden;
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5);
+}
+
+.banner-excursiones::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.fondo{
+    overflow: hidden;
+}
+
+.h2-excursiones{
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.parrafos-excursiones{
+    font-size: 1rem;
+    color: #000;
+    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    margin: 10px 50px 40px 50px;
+    text-align: center;
+}
+
+/*---Catalogo de excursiones en cards---*/
+
+.h2-size {
+    font-size: 1.5rem; 
+    color:#000;
+}
+
+.card-img-custom {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.card-text{
+    font-family: 'Merriweather Sans', sans-serif;;
+    color:#000;
+}
+
+.card-bg {
+    --bs-bg-opacity: 0.5;
+    background-color: rgba(52, 78, 65, var(--bs-bg-opacity));
+}
+
+.btn-design{
+    font-family:'Manrope', sans-serif;
+}

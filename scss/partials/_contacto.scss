@@ -1,0 +1,86 @@
+/*Contacto----------------------------------------------------------------------------------------------------------------*/
+
+.banner-contacto{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-image: url(../multimedia/banner-contacto.jpg);
+    background-size: cover;
+    background-position: center;
+    text-shadow: 2px 2px 4px black;  
+    overflow: hidden;
+    box-shadow: inset 0 0 100px rgba(0, 0, 0, 0.5);
+}
+
+.banner-contacto::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.fondo{
+    overflow: hidden;
+}
+
+.col-margin {
+    margin-left: 15px; 
+    margin-right: 15px; 
+}
+
+.recuadro{
+    border: 1px solid black; 
+    padding: 20px;
+    position: relative;
+}
+
+.espaciado{
+    margin-top: 50px;
+}
+
+.label-mensaje {
+    margin-bottom: 5px;
+}
+
+.cuadro-mensaje{
+    background-color: $arena;
+    border:1px solid #000;
+    border-radius: 5px;
+}
+
+.texto-form{
+    font-size: 1rem;
+    color: black;
+    font-weight: 400;
+    font-family: "Raleway", sans-serif;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.form-control {
+    background-color: $arena; 
+    border:1px solid #000;
+}
+
+/*---imagenes---*/
+.imagen-achicada {
+    max-width: 100%;
+    height: auto;
+  }
+
+.img-contacto {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 70%; 
+    height: auto; 
+    margin-left: 15px;
+    margin-right: 15px;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.8));
+}
